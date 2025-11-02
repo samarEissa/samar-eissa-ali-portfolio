@@ -1,0 +1,106 @@
+.our-team h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: var(--primary-color);
+    font-weight: var(--strong-weight);
+}
+.our-team .section-header {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.our-team .section-header p {
+   color: var(--gray-color);
+}
+
+.our-team h2::after,
+.our-team h2::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--gray-color);
+    margin-inline: 8px;
+}
+.our-team-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    direction: rtl; /* مهم علشان السلايدر يبقى يمين لليسار */
+  }
+  
+  .our-team-track {
+    padding: 50px ;
+    margin-block: 30px;
+    display: flex;
+    gap: 25px;
+    transition: transform 0.5s ease-in-out; /* الحركة */
+    will-change: transform; /* تحسين الأداء */  }
+  
+  .our-team-track .our-team-slide {
+    flex: 0 0 calc(100% / 3); /* 4 صور في الصف على الشاشات الكبيرة */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 8px;
+  }
+  .our-team-slider {
+    overflow: hidden; /* موجود عندك بس لازم يكون مضبوط */
+}
+
+  .our-team-track img {
+    max-width: 150px;
+    height: 150px;
+    padding-top: 10px;
+   
+  }
+    .our-team-track h3 {
+        font-size: 1.2rem;
+        color: var(--primary-color);
+        font-weight: var(--strong-weight);
+    }
+    .our-team-track .job-title ,.our-team-track .job-description{
+        font-size: 1rem;
+        color: var(--gray-color);
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .our-team-track .profile-link{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        font-size: 1rem;
+        color: var(--gray-color);
+        text-align: center;
+        padding-top: 10px;
+    }
+    .our-team-track .profile-link a{
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+
+
+@media (max-width: 1024px) {
+    .our-team-track .our-team-slide {
+        flex: 0 0 calc(100% / 2); /* 2 صور في الصف على الشاشات المتوسطة */
+    }
+
+  
+}
+@media (max-width: 600px) {
+  .our-team-track {
+      gap: 15px; /* بدل 25px */
+      padding: 0 10px; /* بدل 50px */
+  }
+
+  .our-team-track .our-team-slide {
+      flex: 0 0 100%;
+  }
+}

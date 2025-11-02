@@ -1,0 +1,53 @@
+.contact{
+    background-color: #000;
+    padding: 40px 0;
+    position: relative;
+
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    /* display: block; */ 
+    background-image: url("../img/blur.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 63% auto;
+    transition: background var(--overlay-transition,.3s),border-radius var(--border-transition,.3s),opacity var(--overlay-transition,.3s);
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap; 
+}
+.contact .row .col{
+    width: 100%;
+    text-align: center;
+}
+.contact .row .col h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.contact .row .col .text-gray{
+    color: var(--e-global-color-secondary);
+    font-size: 20px;
+    line-height: 1.6;
+    margin-block: 20px;
+}
+/* 
+ */
+ @media (max-width:767px) {
+    .contact .row .col h2{
+        font-size: 27px;
+    }
+    .contact .row .col .text-gray{
+        font-size: 17px;
+    }
+    
+    
+ }

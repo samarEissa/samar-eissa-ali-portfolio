@@ -1,0 +1,31 @@
+.filter-category-single-work .social-media{
+overflow: hidden;
+margin-top: 20px;
+
+}
+.filter-category-single-work .social-media .row{
+display: flex;
+gap: 55px;
+margin-bottom: 40px;
+flex-wrap: nowrap;
+transition: transform 0.1s linear;
+}
+.filter-category-single-work .social-media .row .col{
+flex: 0 0 30%;
+}
+.filter-category-single-work .social-media .row-bottom{
+flex-direction: row-reverse;
+}
+
+/* ===== الموبايل ===== */
+@media (max-width: 768px) {
+  .filter-category-single-work .social-media .row {
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    transform: none !important; /* يلغي التحريك على الموبايل */
+  }
+  .filter-category-single-work .social-media .row .col {
+    flex: 0 0 100%;
+  }
+}

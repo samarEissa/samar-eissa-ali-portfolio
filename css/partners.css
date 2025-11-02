@@ -1,0 +1,87 @@
+.partners{
+    background-color: #000;
+    padding: 40px 0;
+    direction: rtl;
+}
+.partners .row{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap; /* يخليها مرنة على الموبايل */
+  gap: 20px;
+}
+.partners .row .col-right{
+    width: 25%;
+}
+.partners .row .col-left{
+    width: 68%;
+    overflow: hidden;
+
+}
+
+.partners-logos {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+  }
+  .partner-logo {
+    flex: 0 0 25%; /* 4 شعارات في كل صف */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .partner-logo img {
+    max-width: 120px;
+    max-height: 70px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 1s ease;
+  }
+  
+  .partner-logo img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  
+@media (max-width:991px) {
+    .partners .row .col-right ,.partners .row .col-left{
+        width: 100%;
+        text-align: center;
+    }
+    .partners .row .col-right h2{
+        font-size: 30px;
+    }
+    .partners .partners-logos {
+        gap: 20px;
+      }
+      .partner-logo {
+        flex: 0 0 33.33%; /* 3 شعارات في كل صف */
+      }
+      .partner-logo img {
+        max-width: 100px;
+        max-height: 60px;
+      }
+    }
+  @media (max-width:767px) {
+    .partners .row .col-right h2{
+        font-size: 25px;
+    }
+    .partners .partners-logos {
+        gap: 15px;
+      }
+      .partner-logo {
+        flex: 0 0 50%; /* 2 شعارات في كل صف */
+      }
+      .partner-logo img {
+        max-width: 80px;
+        max-height: 50px;
+      }
+      
+  }

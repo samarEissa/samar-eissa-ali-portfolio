@@ -1,0 +1,101 @@
+.footer{
+  background-color: #000;
+  position: relative;
+  background-image: url("../img/icon-footer.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  transition: all 1s ease-in-out;
+}
+.footer:hover{
+  background-image: url("../img/icon-footer11.png");
+}
+.footer .row{
+  display: flex;
+  justify-content: space-between;
+ 
+  gap: 20px;
+}
+.footer .row .col{
+  width: 30%;
+  padding: 40px 20px;
+}
+
+.footer .row .col h2{
+  margin-bottom: 20px;
+}
+.footer .row .col ul li{
+  margin-bottom: 10px;
+}
+
+.footer-description .footer-socials{
+  margin-top: 20px;
+  width: 100%;
+   display: flex;
+  gap: 10px;
+}
+.footer-description .footer-socials a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background: var(--e-global-color-primary);
+  border-radius: 50%;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.footer-description .footer-socials a:hover{
+  background: var(--e-global-color-913edee);
+  transform: scale(1.1);
+}
+
+
+.row-bottom{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+}
+.footer-bottom{
+  border-top: .1px solid var(--white);
+
+}
+.footer-contact{
+  position: relative;
+  z-index: 1;
+}
+.footer-contact::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-image: url("../img/blur.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  transition: background var(--overlay-transition,.3s),border-radius var(--border-transition,.3s),opacity var(--overlay-transition,.3s);
+}
+@media (max-width: 768px) {
+  .footer .row{
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    gap: 0;
+  }
+  .footer .row .col{
+    width: 100%;
+  }
+  .footer .row .col ul li,.footer-description{
+    font-size: 18px;
+  }
+  .footer{
+    
+    background-position: center;
+  }
+}

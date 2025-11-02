@@ -1,0 +1,189 @@
+{
+    "technologies": {
+        "Programming Languages": [
+            {
+                "name": "C Language",
+                "image": "./img/logo C.jfif"
+            },
+            {
+                "name": "C++ Language",
+                "image": "./img/logo C++.jfif"
+            },
+            {
+                "name": "JavaScript",
+                "image": "./img/js logo.jfif"
+            },
+            {
+                "name": "TypeScript",
+                "image": "./img/logo typescript.png"
+            },
+            {
+                "name": "PHP",
+                "image": "./img/php-200x200.webp"
+            }
+        ],
+        "Front-End Technologies": [
+            {
+                "name": "HTML & HTML5",
+                "image": "./img/logo HTML.jfif"
+            },
+            {
+                "name": "CSS & CSS3",
+                "image": "./img/logo CSS.jfif"
+            },
+            {
+                "name": "React JS",
+                "image": "./img/logo react.png"
+            },
+            {
+                "name": "Angular JS",
+                "image": "./img/logo angular.png"
+            },
+            {
+                "name": "Next JS",
+                "image": "./img/logo-next-js.png"
+            }
+        ],
+        "Back-End Technologies": [
+            {
+                "name": "Node JS",
+                "image": "./img/logo nodejs.jpg"
+            },
+            {
+                "name": "Nest JS",
+                "image": "./img/logo nest.png"
+            },
+            {
+                "name": "Express",
+                "image": "./img/logo express.png"
+            }
+        ],
+        "Frameworks": [
+            {
+                "name": "Bootstrap",
+                "image": "./img/logo bootstrap.png"
+            },
+            {
+                "name": "Tailwind",
+                "image": "./img/logo tailwind.png"
+            },
+            {
+                "name": "Material UI",
+                "image": "./img/logo material ui.jfif"
+            }
+        ],
+        "Tools and Workflow": [
+            {
+                "name": "GitHub",
+                "image": "./img/logo-github.png"
+            },
+            {
+                "name": "Agile",
+                "image": "./img/logo agil.png"
+            },
+            {
+                "name": "Postman",
+                "image": "./img/logo postman.png"
+            }
+        ]
+    },
+    "previousWorks": {
+        "Next Projects": [
+            {
+                "site name": "Udemy Clone",
+                "site logo": "./imgs/web-logo-udemy.svg",
+                "site link": "https://udemy-next-nu.vercel.app/",
+                "site home page images": "./imgs/wesites-udemy-home.png",
+                "other images": [
+                    "./imgs/wesites-udemy-home.png",
+                    "imgs/wesites-udemy-categry.png",
+                    "imgs/wesites-udemy-cart.png",
+                    "imgs/wesites-udemy-one-course.png",
+                    "imgs/wesites-udemy-responsive.png",
+                    "imgs/wesites-udemy-subcategory.png"
+                ],
+                "used technologies": [
+                    "Next Js",
+                    "Node js",
+                    "Tailwind",
+                    "GitHub"
+                ]
+            }
+        ],
+        "Landing Pages": [
+            {
+                "site name": "Emaar Design",
+                "site logo": "./imgs/web-logo-emaar.png",
+                "site link": "https://emarrdesign.com",
+                "site home page images": "./imgs/web-emaar-home.png",
+                "other images": [
+                    "./imgs/web-emaar-home.png",
+                    "imgs/web-emaar-about.png",
+                    "imgs/web-emaar-contact.png",
+                    "imgs/web-emaar-one-sevice.png",
+                    "imgs/web-emaar-responsive.png",
+                    "imgs/web-emaar-services.png"
+                ],
+                "used technologies": [
+                    "HTML 5",
+                    "CSS 3",
+                    "Java script"
+                ]
+            },
+            {
+                "site name": "AL-alamanya company",
+                "site logo": "./imgs/web-logo-alalmanya.png",
+                "site link": "https://alalmanyacompany.com",
+                "site home page images": "./imgs/web-insectsRemoving-home.png",
+                "other images": [
+                    "./imgs/web-insectsRemoving-home.png",
+                    "imgs/web-insectsRemoving-about.png",
+                    "imgs/web-insectsRemoving-contact.png",
+                    "imgs/web-insectsRemoving-one-sevice.png",
+                    "imgs/web-insectsRemoving-responsive.png"
+                ],
+                "used technologies": [
+                    "HTML 5",
+                    "CSS 3",
+                    "Java script"
+                ]
+            },
+            {
+                "site name": "Sedar Kuwait",
+                "site logo": "./imgs/web-logo-sedar.png",
+                "site link": "https://sedar-kuwait.com",
+                "site home page images": "./imgs/web-sedar-home.png",
+                "other images": [
+                    "./imgs/web-sedar-home.png",
+                    "imgs/web-sedar-about.png",
+                    "imgs/web-sedar-contact.png",
+                    "imgs/web-sedar-one-sevice.png",
+                    "imgs/web-sedar-responsive.png",
+                    "imgs/web-sedar-collection.png"
+                ],
+                "used technologies": [
+                    "HTML 5",
+                    "CSS 3",
+                    "Java script"
+                ]
+            },
+            {
+                "site name": "Engaz shippping",
+                "site logo": "./imgs/web-logo-angaz.png",
+                "site link": "https://angazshipping.com",
+                "site home page images": "./imgs/web-shipping-home.png",
+                "other images": [
+                    "./imgs/web-shipping-home.png",
+                    "imgs/web-shipping-contact.png",
+                    "imgs/web-shipping-one-sevice.png",
+                    "imgs/web-shipping-responsive.png"
+                ],
+                "used technologies": [
+                    "HTML 5",
+                    "CSS 3",
+                    "Java script"
+                ]
+            }
+        ]
+    }
+}

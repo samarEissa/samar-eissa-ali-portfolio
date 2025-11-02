@@ -1,0 +1,73 @@
+
+/* حاوية السلايدر */
+.our-site-slider {
+    width: 100%;
+    margin: auto;
+    padding: 50px; /* انتقل البادينج هنا */
+    overflow: hidden; /* مهم */
+  }
+  
+  /* المسار (اللي يتحرك) */
+  .our-site-track {
+    display: flex;
+    gap: 25px;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    padding: 0; /* لا بادينج هنا */
+    align-items: stretch;
+  }
+  
+  /* الكارت */
+  .our-site-track .our-site-slide {
+    flex: 0 0 33.3333%; /* افتراض 3 في الشاشة الكبيرة */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  /* الصورة */
+  .our-site-track img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* مهم حتى لا يتم تشويه الصورة */
+    border-radius: 8px 8px 0 0;
+    display: block;
+  }
+  
+  /* النصوص */
+  .our-site-track h3 {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: var(--strong-weight);
+  }
+  .our-site-track .job-description{
+    font-size: 1rem;
+    color: var(--gray-color);
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  /* استجابة */
+  @media (max-width: 1024px) {
+    .our-site-track .our-site-slide {
+      flex: 0 0 50%;
+    }
+  }
+  @media (max-width: 768px) {
+    .our-site-track .our-site-slide {
+      flex: 0 0 100%;
+    }
+    .our-site-slider {
+      padding: 20px;
+    }
+    .our-site-track {
+      gap: 15px;
+    }
+  }

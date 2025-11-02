@@ -1,0 +1,109 @@
+.single-service-hero {
+    background-color: #000;
+    padding-block: 100px 20px;
+    position: relative;
+}
+.single-service-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: block; 
+    opacity: .5;
+    background-image: url("../img/blur.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 63% auto;
+    transition: background var(--overlay-transition,.3s),border-radius var(--border-transition,.3s),opacity var(--overlay-transition,.3s);
+}
+
+.single-service-hero .row {
+    display: flex;
+    gap: 50px;
+    padding-block: 20px;
+    align-items: center;
+}
+.single-service-hero .row .col-left .text-gray{
+    color: var(--e-global-color-secondary);
+    font-size: 20px;
+    line-height: 1.6;
+    margin-block: 20px;
+    font-weight: 600;
+}
+.single-service-hero .row .col-right {
+    width: 40%;
+    height: 450px;
+}
+.single-service-hero .row .col-left {
+    width: 55%;
+}
+
+.single-service-hero .row .col-right .img {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/single-serv-elements1.png");
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-service-hero .row .col-right img {
+    width: 50%;
+    border-radius: 50%;
+}
+.single-service-hero .row .col-left h1{
+    font-size: 50px;
+    font-weight: 500;
+ 
+}
+
+.single-service-hero .row .col-left p{
+    text-align: center;
+ 
+}
+
+.single-service-hero .row .margin-bottom {
+    margin-bottom: 20px;
+}
+
+/* تابلت */
+@media (max-width: 1024px) {
+    .single-service-hero {
+        padding-block: 90px 0px;
+    }
+
+  }
+  
+  /* لابتوب وديسكتوب */
+  @media (max-width: 769px) {
+    .single-service-hero .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .single-service-hero .row .col-right {
+        order: 2;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .single-service-hero .row .col-left {
+       width: 100%;
+    }
+  }
+  /* لابتوب وديسكتوب */
+  @media (max-width: 543px) {
+    .single-service-hero .row .col-left h1 {
+        font-size: 30px;
+    }
+    .single-service-hero .row .col-right {
+      width: 80%;
+       
+    }
+  }
+

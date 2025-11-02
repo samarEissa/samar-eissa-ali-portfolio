@@ -1,0 +1,121 @@
+.professional-and-famous-platforms {
+    background-color: #000000;
+    padding: 20px 0;
+}
+
+
+.professional-and-famous-platforms .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.professional-and-famous-platforms .row-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 20px;
+
+}
+
+
+.professional-and-famous-platforms .row .col-left {
+    width: 80%;
+    overflow: hidden;
+
+}
+
+.professional-and-famous-platforms .platforms-logos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+}
+
+.professional-and-famous-platforms .platform-logo {
+    flex: 0 0 calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.professional-and-famous-platforms .platform-logo img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: all 1s ease;
+}
+
+
+@media (max-width:991px) {
+
+    .platforms .row .col-right,
+    .platforms .row .col-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .platforms .row .col-right h2 {
+        font-size: 30px;
+    }
+
+    .platforms .platforms-logos {
+        gap: 30px;
+    }
+
+
+    .professional-and-famous-platforms .platform-logo {
+        flex: 0 0 50%;
+        /* 3 شعارات في كل صف */
+    }
+
+}
+
+@media (max-width:767px) {
+    .platforms .row .col-right h2 {
+        font-size: 25px;
+    }
+
+    .platforms .platforms-logos {
+        gap: 15px;
+    }
+
+    .professional-and-famous-platforms .platform-logo {
+        flex: 0 0 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تابلت */
+@media (max-width: 1024px) {
+    .professional-and-famous-platforms .row .col {
+        width: 48%;
+    }
+
+}
+
+/* لابتوب وديسكتوب */
+@media (max-width: 667px) {
+    .professional-and-famous-platforms .row .col {
+        width: 100%;
+    }
+}

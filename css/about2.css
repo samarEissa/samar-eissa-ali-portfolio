@@ -1,0 +1,27 @@
+
+.about2-section .container .about2-row{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    
+}
+.about2-section .container .about2-row .about2-col{
+   flex: 1;
+}
+.about2-section .container .about2-row .about2-col img{
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .about2-section .container .about2-row{
+        flex-direction: column;
+      padding-bottom: 0;  
+      gap: 0;
+    }
+    .about2-section .container .about2-row .about2-col{
+        margin-bottom: 30px;
+    }
+    
+}

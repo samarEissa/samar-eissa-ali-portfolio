@@ -1,0 +1,43 @@
+.single-clients-slider {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+   
+  }
+  
+  .single-clients-track {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px ;
+    gap: 10px;
+  }
+  
+  .single-clients-track .slide {
+    width: 18%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 10px; */
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .single-clients-track img {
+    max-width: 100px;
+    height: auto;
+    padding: 10px;
+    filter: grayscale(100%); /* لجعل الصور رمادية */
+  }
+  .single-clients-track img:hover {
+    filter: none; /* إزالة التدرج الرمادي عند المرور */
+    transform: scale(1.1); /* تكبير الصورة قليلاً عند المرور */
+    transition: transform 0.3s, filter 0.3s;
+  }
+    @media (max-width: 768px) {
+        .single-clients-track .slide {
+        width: 100%;
+        }
+        
+    }

@@ -1,0 +1,20 @@
+.why-the-best-in-single-serv{
+    background-color: #000;
+    padding: 20px 0;
+}
+
+.why-the-best-in-single-serv .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.why-the-best-in-single-serv .row h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+
+}
+.why-the-best-in-single-serv .row p{
+    margin-block: 10px;
+    font-size: 18px;
+    color: var(--e-global-color-secondary);
+}

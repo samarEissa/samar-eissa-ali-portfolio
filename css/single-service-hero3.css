@@ -1,0 +1,98 @@
+.single-service-hero3 {
+    background-color: #000;
+    padding-block: 20px;
+}
+
+.single-service-hero3 .row {
+    display: flex;
+    gap: 50px;
+    padding-block: 20px;
+    align-items: center;
+}
+.single-service-hero3 .row .col-left .text-gray{
+    color: var(--e-global-color-secondary);
+    font-size: 20px;
+    line-height: 1.6;
+    margin-block: 20px;
+    font-weight: 600;
+}
+.single-service-hero3 .row .col-right {
+    width: 43%;
+    height: 450px;
+}
+.single-service-hero3 .row .col-left {
+    width: 53%;
+}
+
+.single-service-hero3 .row .col-right .img {
+    height: 100%;
+    width: 100%;
+    /* background-image: url("../img/circle-purbble-3.png");
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-service-hero3 .row .col-right img {
+    width: 70%;
+    /* border-radius: 50%; */
+}
+.single-service-hero3 .row .col-left h1{
+    font-size: 50px;
+    font-weight: 500;
+ 
+}
+
+.single-service-hero3 .row .col-left p{
+    margin-bottom: 20px;
+    font-size: 20px;
+ 
+}
+
+.single-service-hero3 .row .margin-bottom {
+    margin-bottom: 20px;
+}
+
+/* تابلت */
+@media (max-width: 1024px) {
+    .single-service-hero3 {
+        padding-block: 0px;
+    }
+
+  }
+  
+  /* لابتوب وديسكتوب */
+  @media (max-width: 769px) {
+    .single-service-hero3 .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .single-service-hero3 .row .col-right {
+        order: 2;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .single-service-hero3 .row .col-right img {
+        width: 100%;
+        /* border-radius: 50%; */
+    }
+    .single-service-hero3 .row .col-left {
+       width: 100%;
+    }
+  }
+  /* لابتوب وديسكتوب */
+  @media (max-width: 543px) {
+    .single-service-hero3 .row .col-left h1 {
+        font-size: 30px;
+    }
+    .single-service-hero3 .row .col-right {
+      width: 80%;
+       
+    }
+  }
+

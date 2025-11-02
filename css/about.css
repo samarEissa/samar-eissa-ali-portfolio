@@ -1,0 +1,98 @@
+.about {
+    background-color: #000;
+    padding: 40px 0;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about .row .col-right,
+.about .row .col-left {
+    width: 49%;
+    text-align: center;
+}
+
+.about .row .col-right h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about .row .col-right .text-gray {
+    color: var(--e-global-color-secondary);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-block: 20px;
+}
+
+.about .row .col-left {
+    position: relative;
+    height: fit-content;
+}
+
+.about .row .col-left ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    /* display: block; */
+    background-image: url("../img/blur.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 63% auto;
+    transition: background var(--overlay-transition, .3s), border-radius var(--border-transition, .3s), opacity var(--overlay-transition, .3s);
+}
+
+.about .row .col-left img {
+    width: 80%;
+    border-radius: 20px
+}
+
+.about ul {
+    text-align: start;
+    list-style: none;
+    width: fit-content;
+}
+
+.about ul li {
+    width: fit-content;
+    text-align: start;
+    /* direction: rtl; */
+    background: url(../imgs/programming\ icon.png) no-repeat left top;
+    padding-left: 60px;
+    background-size: 50px 50px;
+}
+
+@media (max-width:991px) {
+
+    .about .row .col-right,
+    .about .row .col-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about .row .col-left img {
+        width: 100%;
+    }
+}
+
+/* 
+ */
+@media (max-width:767px) {
+    .about .row .col-right h2 {
+        font-size: 25px;
+    }
+
+    .about .row .col-right .text-gray {
+        font-size: 16px;
+    }
+
+}

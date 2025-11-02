@@ -1,0 +1,261 @@
+
+.slider-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 48px 18px;
+    position: relative;
+    z-index: 2;
+}
+.skills-section {
+    background: var(--helperColor);
+    color: var(--white);
+    position: relative;
+  }
+  .skills-section svg {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 20px;
+    width: 100%;
+}
+
+  .skills-section::after {
+    content: "";
+    background-image: url("../img/logo.png");
+    background-size: 250px;
+    opacity: .09;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+
+.slider-section-header {
+    text-align: center;
+    margin-bottom: 28px
+}
+
+.slider-section {
+    position: relative;
+}
+
+.slider-section svg {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 20px;
+    width: 100%;
+}
+.slider-container {
+    max-width:1140px;
+    margin:0 auto;
+    padding:60px 20px;
+  }
+  .slider-section-header {
+    text-align:center;
+    margin-bottom:40px;
+  }
+  .slider-section-title {
+      display: inline-block;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: var(--primaryColor);
+      position: relative;
+  }
+  
+  .slider-section-title::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      border-radius: 25px;
+      bottom: -10%;
+      left: 0;
+      background-image: linear-gradient(90deg, var(--lightHelper) 0%, var(--primaryColor) 100%);
+  
+  }
+  
+  .slider-section-title::before {
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 5px;
+      border-radius: 25px;
+      bottom: -25%;
+      right: 0;
+      background-image: linear-gradient(90deg, var(--lightHelper) 0%, var(--primaryColor) 100%);
+  
+  }
+
+/* ========== Slider ========== */
+.slider {
+    position: relative
+}
+
+.viewport {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 14px;
+    /* حل بصري خفيف لتمييز الحواف */
+    box-shadow: inset 0 0 0 1px rgba(7, 20, 40, .05);
+    background: transparent;
+}
+
+.track {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 18px;
+    will-change: transform;
+    touch-action: pan-y;
+    user-select: none;
+    transition: transform .45s cubic-bezier(.22, .61, .36, 1);
+}
+
+/* الشريحة */
+.slide {
+    min-width: calc((100% - 36px)/3);
+    /* 3 أعمدة مع فجوتين = 18px*2 */
+    flex: 0 0 calc((100% - 36px)/3);
+}
+
+@media (max-width: 992px) {
+    .slide {
+        min-width: calc((100% - 18px)/2);
+        flex-basis: calc((100% - 18px)/2);
+    }
+}
+
+@media (max-width: 600px) {
+    .slide {
+        min-width: 100%;
+        flex-basis: 100%;
+    }
+}
+
+/* بطاقة المهارة */
+.skill-card {
+    background: #F8F5FF;
+    border-radius: 20px 2px 20px 2px;
+    padding: 22px 18px;
+    text-align: center;
+    height: 100%;
+}
+
+.icon {
+    font-size: 38px;
+    line-height: 1;
+    margin-bottom: 10px
+}
+
+/* .title {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 6px 0 6px
+}
+
+.desc {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0
+} */
+
+/* أزرار التنقل */
+.nav {
+    position: absolute;
+    top: -10%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: var(--lightHelper);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.nav:hover {
+    background: var(--primaryColor);
+    color: var(--helperColor);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    transform: translateY(-50%) scale(1.05)
+}
+
+.nav:active {
+    transform: translateY(-50%) scale(.98)
+}
+
+.nav:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px var(--ring)
+}
+
+.nav.prev {
+    left: 5%;
+}
+
+/* RTL: السهم السابق على اليمين */
+.nav.next {
+    left: 1%;
+}
+
+/* RTL: السهم التالي على اليسار */
+
+/* النقاط */
+.dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px
+}
+
+.dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: var(--primaryColor);
+    cursor: pointer;
+    transition: transform .2s ease, background .2s ease;
+    padding: 0
+}
+
+.dots button[aria-selected="true"] {
+    background: var(--lightHelper);
+    transform: scale(1.15)
+}
+
+.dots button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px var(--ring)
+}
+
+/* سحب المستخدم: تعطيل الانتقال لتبدو طبيعية */
+.track.is-dragging {
+    transition: none !important
+}
+
+/* Small tablets & large phones */
+@media (max-width: 900px) {
+    .nav.prev {
+        left: 6%;
+    }  
+}
+
+/* Phones */
+@media (max-width: 576px) {
+    .nav.prev {
+        left: 15%;
+    }    
+}

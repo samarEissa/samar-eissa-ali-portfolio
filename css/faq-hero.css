@@ -1,0 +1,118 @@
+.faq-hero {
+    background-color: #000;
+    padding-block: 150px 20px;
+    position: relative;
+}
+.faq-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: block; 
+    opacity: .5;
+    background-image: url("../img/blur.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 63% auto;
+    transition: background var(--overlay-transition,.3s),border-radius var(--border-transition,.3s),opacity var(--overlay-transition,.3s);
+}
+
+.faq-hero .row {
+    display: flex;
+    gap: 50px;
+    padding-block: 20px;
+    align-items: center;
+}
+
+.faq-hero .row .col-right {
+    width: 40%;
+    height: 350px;
+}
+
+.faq-hero .row .col-right .img {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/circle-purbble-3.png");
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-hero .row .col-right img {
+    width: 70%;
+    border-radius: 50%;
+}
+.faq-hero .row .col-left h1{
+    font-size: 50px;
+    font-weight: 500;
+ 
+}
+
+.faq-hero .row .col-left p{
+    text-align: center;
+ 
+}
+
+.faq-hero .row .margin-bottom {
+    margin-bottom: 20px;
+}
+.faq-tab .filter-category-single-work .row .col{
+width: 100%;
+}
+.our-work-tab .row.row-faq-tab {
+    
+    justify-content: center;
+    
+}
+.our-work-tab .row.row.row-faq-tab .tab-button.active {
+    color: var(--e-global-color-text);
+   background-color: var(--white);
+   border-radius: 5px;
+}
+.our-work-tab .row.row.row-faq-tab .tab-button {
+    background-color: var(--e-global-color-text);
+    border-radius: 5px;
+
+}
+
+/* تابلت */
+@media (max-width: 1024px) {
+    .faq-hero {
+        padding-block: 90px 0px;
+    }
+
+  }
+  
+  /* لابتوب وديسكتوب */
+  @media (max-width: 769px) {
+    .faq-hero .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .faq-hero .row .col-right {
+        order: 2;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .faq-hero .row .col-left {
+       width: 100%;
+    }
+  }
+  /* لابتوب وديسكتوب */
+  @media (max-width: 543px) {
+    .faq-hero .row .col-left h1 {
+        font-size: 30px;
+    }
+    .faq-hero .row .col-right {
+      width: 80%;
+       
+    }
+  }
+

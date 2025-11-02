@@ -1,0 +1,89 @@
+.faq-blog{
+    background-color: #000;
+    padding: 20px 0;
+}
+
+
+
+
+.faq-title {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.faq-blog .row{
+    display: flex;
+    justify-content: space-between;
+}
+.faq-blog .row .col{
+    width: 48%;
+    transition:all .5s ease-in-out;
+}
+
+
+
+
+.faq-item {
+    border-bottom: 1px solid #E7ECF5;
+    padding: 14px 18px;
+    transition:all .5s ease-in-out;
+}
+
+.faq-item summary {
+    font-size: 16px;
+    cursor: pointer;
+    list-style: none;
+    outline: none;
+    user-select: none;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    transition:all .5s ease-in-out;
+}
+.faq-item[open] summary{
+    font-size: 20px;
+
+}
+
+/* سهم */
+.faq-item summary::before {
+    content: "▸";
+    font-size: 16px;
+    transform: scaleX(-1);
+    transition: transform .2s ease;
+}
+
+.faq-item[open] summary::before {
+    transform: rotate(90deg) scaleX(-1);
+}
+
+.faq-content {
+    padding: 10px 6px 4px 6px;
+    margin-top: 8px;
+    transition:all .5s ease-in-out;
+}
+.faq-content ul{
+   
+    margin: 8px 0;
+}
+
+/* responsive tweaks */
+@media (max-width: 920px) {
+    .faq-blog .row {
+        flex-direction: column;
+    }
+    .faq-blog .row .col{
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .faq-title {
+        font-size: 22px
+    }
+
+    .faq-item {
+        padding: 12px 14px
+    }
+}

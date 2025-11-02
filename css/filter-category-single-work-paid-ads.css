@@ -1,0 +1,33 @@
+.filter-category-single-work .paid-ads {
+    margin-top: 20px;
+}
+.filter-category-single-work .paid-ads .row {
+    justify-content: right;
+    gap: 30px;
+}
+.filter-category-single-work .paid-ads .row .col{
+    height: 450px;
+    background-image: url("../img/paid-ads-card.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+}
+.filter-category-single-work .paid-ads .row .col h2{
+ text-align: center;
+ margin-block: 20px;
+ font-size: 30px;
+}
+.filter-category-single-work .paid-ads .row .col img{
+  height: 40%;
+  width: 100%;
+}
+@media (max-width: 768px) {
+    .filter-category-single-work .paid-ads .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .filter-category-single-work .paid-ads .row .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

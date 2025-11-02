@@ -1,0 +1,81 @@
+.counter {
+  background-color: #000;
+  position: relative;
+  display: none;
+
+}
+
+.counter::before {
+  content: "";
+  position: absolute;
+  /* top: 0; */
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  /* display: block; */
+  background-image: url("../img/blur.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 63% auto;
+  transition: background var(--overlay-transition, .3s), border-radius var(--border-transition, .3s), opacity var(--overlay-transition, .3s);
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  /* gap: 20px; */
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.stat-box {
+  /* border-radius: 10px; */
+  padding: 20px 40px;
+  text-align: center;
+  border-left: 1px solid #eeeeee5e;
+  /* border-top: 3px solid var(--primary-color); */
+  /* box-shadow: 0 4px 10px rgba(0,0,0,0.05); */
+  flex: 1 1 200px;
+}
+
+.stat-box:last-child {
+  border-left: none;
+  /* Remove left border for the first box */
+}
+
+.stat-number {
+  display: block;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.stat-label {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--e-global-color-secondary);
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .stat-box {
+    padding: 15px 20px;
+    flex: 1 1 100%;
+    border-left: none;
+    border-top: 1px solid #eeeeee5e;
+    margin-top: 10px;
+  }
+
+  /* .stat-number {
+      font-size: 24px;
+    } */
+
+  /* .stat-label {
+      font-size: 14px;
+    } */
+  .counter::before {
+
+    background-position: center;
+    background-size: 100% auto;
+  }
+}

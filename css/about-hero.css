@@ -1,0 +1,31 @@
+.about-hero {
+    background-color: #000;
+    padding-block: 100px 20px;
+}
+
+/* .about-hero .row {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+} */
+
+.about-hero .row .margin-bottom {
+    margin-bottom: 20px;
+}
+
+
+@media (max-width:767px) {
+    .about-hero .row {
+        flex-direction: column;
+    }
+
+    /* .about-hero .row .col-right {
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-hero .row .col-right img {
+        width: 50%;
+    } */
+}

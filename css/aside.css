@@ -1,0 +1,54 @@
+
+
+.floating-icons {
+    position: fixed;
+    bottom: 20px; 
+    left: 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    z-index: 1000; 
+  }
+  
+  .floating-icons a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #25D366; 
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .floating-icons .fa-whatsapp{
+   font-size: 40px;
+  }
+  .floating-icons .phone-icon {
+   font-size: 30px;
+  }
+  .floating-icons .phone-icon {
+    background-color: var(--white); 
+    color: var(--e-global-color-text);
+    border: 3px solid var(--e-global-color-text);
+  }
+  
+  .floating-icons a:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+  
+    .floating-icons {
+        right: 10px;
+        bottom: 10px;
+    }
+  
+  
+  }
+  

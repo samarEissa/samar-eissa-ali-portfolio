@@ -1,0 +1,295 @@
+.job-form {
+    background-color: #000;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.col-contact-tab{
+    justify-content: center;
+}
+.job-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-image: url("../img/blur.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background var(--overlay-transition, .3s), border-radius var(--border-transition, .3s), opacity var(--overlay-transition, .3s);
+}
+.company-name{
+    width: 100% !important;
+}
+.job-form .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.job-form .row .col {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.job-form .row .col h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.job-form .row .col .job-form-contact ul li a {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18PX;
+    margin-bottom: 10px;
+
+}
+
+.job-form .row .col .job-form-contact ul li a .elementor-icon-list-icon {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.job-form .row .col .job-form-contact ul li a i {
+    font-size: 25px;
+    margin-left: 12px;
+}
+
+.job-form .row .col .job-form-socials a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: var(--e-global-color-primary);
+    border-radius: 50%;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.job-form .row .col .job-form-socials a:hover {
+    background: var(--e-global-color-913edee);
+    transform: scale(1.1);
+}
+
+.job-form .row .col-form {
+    width: 68%;
+    padding: 50px;
+    background-color: #0A041A;
+}
+
+.job-form .row .col-form form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.job-form .row .col-form form div {
+    width: 48%;
+}
+
+.job-form .row .col-form form input,
+.job-form .row .col-form form select,
+.job-form .row .col-form form textarea{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #000;
+    border: none;
+    color: #757575;
+    border-bottom: 1px solid #757575;
+    transition: all .2s linear;
+    outline: none;
+    text-align: right;
+    font-size: 17px;
+}
+
+.job-form .row .col-form form select option:focus {
+    background-color: #757575;
+}
+
+.job-form .row .col-form form input:focus,
+.job-form .row .col-form form textarea:focus {
+    background-color: var(--white);
+    border: none;
+}
+
+.job-form .row .col-form form textarea {
+    width: 100%;
+    padding: 10px 20px;
+    resize: none;
+}
+.job-form .row .col-form form label {
+    width: 100%;
+    display: block;
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    width: 48%;
+    padding: 10px 20px;
+    background-color: var(--e-global-color-primary);
+    border: none;
+    color: var(--white);
+    border-bottom: 1px solid #757575;
+    transition: all .2s linear;
+    outline: none;
+    text-align: right;
+    font-size: 17px;
+    cursor: pointer;
+}
+input[type="submit"]{
+    width: fit-content !important;
+    color: var(--white) !important;
+    border: 1px solid var(--white) !important;
+    border-radius: 10px;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+   background-color: var(--e-global-color-primary) !important;
+}
+.error-message{
+    color: red;
+    display: none;
+    margin-top: 10px;
+}
+/* ==================== Responsive Design ==================== */
+
+/* 💻 تابلت - شاشة متوسطة */
+@media (max-width: 992px) {
+    .job-form .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .job-form .row .col,
+    .job-form .row .col-form {
+        width: 100%;
+    }
+
+    .job-form .row .col {
+        align-items: start;
+        text-align: center;
+    }
+
+    .job-form .row .col .job-form-socials{
+        justify-content: start;
+    }
+
+    .job-form .row .col h2 {
+        font-size: 26px;
+    }
+
+    .job-form .row .col-form {
+        padding: 30px;
+    }
+
+    .job-form .row .col-form form div {
+        width: 100%;
+    }
+
+    .custom-file-upload {
+        width: 100%;
+        text-align: center;
+    }
+
+    input[type="submit"] {
+        display: block;
+        margin: 20px auto 0;
+    }
+    .job-form .row .col-form form select option {
+        width: auto;
+       
+    }
+}
+
+/* 📱 موبايل - شاشة صغيرة */
+@media (max-width: 768px) {
+    .job-form {
+        padding: 15px;
+    }
+
+    .job-form .row {
+        gap: 20px;
+    }
+
+    .job-form .row .col h2 {
+        font-size: 22px;
+    }
+
+    .job-form .row .col .job-form-contact ul li a {
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    .job-form .row .col .job-form-contact ul li a i {
+        font-size: 20px;
+        margin-left: 8px;
+    }
+
+    .job-form .row .col .job-form-socials a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .job-form .row .col-form {
+        padding: 20px;
+    }
+
+    .job-form .row .col-form form {
+        gap: 15px;
+    }
+
+    .job-form .row .col-form form input,
+    .job-form .row .col-form form textarea,
+    .job-form .row .col-form form select {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+
+    .custom-file-upload {
+        padding: 8px 15px;
+        font-size: 15px;
+    }
+
+    input[type="submit"] {
+        font-size: 15px;
+        padding: 8px 20px;
+    }
+    
+}
+
+/* 📱📱 موبايل صغير جدًا (شاشات أقل من 480px) */
+@media (max-width: 480px) {
+    .job-form .row .col h2 {
+        font-size: 20px;
+    }
+
+    .job-form .row .col-form {
+        padding: 15px;
+    }
+
+    .job-form .row .col-form form input,
+    .job-form .row .col-form form textarea,
+    .job-form .row .col-form form select {
+        font-size: 14px;
+        padding: 7px 12px;
+    }
+
+    .custom-file-upload {
+        font-size: 14px;
+        padding: 7px 12px;
+    }
+}

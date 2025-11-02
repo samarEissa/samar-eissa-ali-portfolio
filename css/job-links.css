@@ -1,0 +1,173 @@
+.job-links{
+    background-color: #000;
+    padding: 20px 0;
+}
+.job-links .col1{
+    text-align: center;
+    margin-block: 20px;
+}
+.job-links .job-links__list{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 10px;
+}
+.job-links .job-links__list .view-anim .job-links__item{
+    display: flex;
+   justify-content: space-around;
+   padding: 20px 0;
+   transition: all .5s ease-in-out;
+   align-items: center;
+}
+.job-links .job-links__list .view-anim .job-links__item .job-links__number,.job-links .job-links__list .view-anim .job-links__item .job-links__link i{
+  font-size: 25px;
+}
+.job-links .job-links__list .view-anim .job-links__item:hover{
+   background-color: var(--e-global-color-text);
+}
+.job-links .job-links__list .view-anim .job-links__item .job-links__link{
+    display: flex;
+    gap: 20px;
+   justify-content: space-between;
+}
+
+
+
+.job-links__item {
+    opacity: 1;
+    transform: none;
+    perspective: 1000px;
+    position: relative;
+}
+
+/* نختار العناصر الداخلية */
+.job-links__item * {
+    opacity: 0;
+    transform: translateZ(-200px);
+}
+
+/* لما العنصر يدخل الشاشة */
+.job-links__item.show * {
+    animation: textPopIn3D 1s cubic-bezier(0.4, 1.4, 0.5, 1) forwards;
+}
+
+/* نعمل موجات مختلفة لكل عنصر داخل الكرت */
+.job-links__item .job-links__number   { animation-delay: 0s; }
+.job-links__item .job-links__title    { animation-delay: 0.1s; }
+.job-links__item .job-links__text     { animation-delay: 0.2s; }
+.job-links__item .job-links__link     { animation-delay: 0.3s; }
+
+/* حركة الدخول والخروج السريعة */
+@keyframes textPopIn3D {
+    0% {
+        opacity: 0;
+        transform: translateZ(-200px) scale(0.8);
+    }
+    25% {
+        opacity: 1;
+        transform: translateZ(80px) scale(1.1);
+    }
+    50% {
+        transform: translateZ(-40px) scale(0.95);
+    }
+    70% {
+        transform: translateZ(40px) scale(1.05);
+    }
+    85% {
+        transform: translateZ(-15px) scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+    }
+}
+
+
+/* ==================== Responsive ==================== */
+
+/* تابلت (992px أو أقل) */
+@media (max-width: 992px) {
+    .job-links .job-links__list .view-anim .job-links__item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    .job-links .job-links__list .view-anim .job-links__item .job-links__link {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+/* موبايل (768px أو أقل) */
+@media (max-width: 768px) {
+    .job-links {
+        padding: 15px 0;
+    }
+
+    .job-links .job-links__list {
+        gap: 15px;
+    }
+
+    .job-links .job-links__list .view-anim .job-links__item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .job-links .job-links__list .view-anim .job-links__item .job-links__number {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .job-links .job-links__list .view-anim .job-links__item .job-links__title {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .job-links .job-links__list .view-anim .job-links__item .job-links__text p {
+        font-size: 16px;
+    }
+
+    .job-links .job-links__list .view-anim .job-links__item .job-links__link {
+        gap: 8px;
+    }
+
+    .job-links .job-links__list .view-anim .job-links__item .job-links__link i {
+        font-size: 18px;
+    }
+}
+
+/* موبايل صغير (480px أو أقل) */
+@media (max-width: 480px) {
+    .job-links .col1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .job-links .job-links__list .view-anim .job-links__item {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .job-links .job-links__list .view-anim .job-links__item .job-links__title {
+        font-size: 16px;
+    }
+
+    .job-links .job-links__list .view-anim .job-links__item .job-links__number,
+    .job-links .job-links__list .view-anim .job-links__item .job-links__link i {
+        font-size: 18px;
+    }
+
+    .job-links .job-links__list .view-anim .job-links__item .job-links__text p {
+        font-size: 14px;
+    }
+
+    .job-links .job-links__list .view-anim .job-links__item .job-links__link {
+        flex-direction: row-reverse;
+        gap: 6px;
+        font-size: 14px;
+    }
+}

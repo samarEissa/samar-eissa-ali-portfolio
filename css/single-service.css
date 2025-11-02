@@ -1,0 +1,80 @@
+
+
+.single-service-section {
+    background: var(--secondary-hover);
+}
+
+.single-service-section .container .single-service-row {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+
+}
+
+.single-service-section .container .single-service-row .single-service-col {
+    color: var(--white);
+    flex: 1;
+}
+
+.single-service-section .container .single-service-row .single-service-col img {
+    width: 100%;
+}
+
+.single-service-section .container .single-service-row .single-service-col .checklist li {
+    position: relative;
+
+}
+
+
+@media (max-width: 768px) {
+    .single-service-section .container .single-service-row {
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 0;
+    }
+
+    .single-service-section .container .single-service-row .single-service-col {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+.single-service2-section .container .single-service2-row{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    
+}
+.single-service2-section .container .single-service2-row .single-service2-col{
+   flex: 1;
+}
+.single-service2-section .container .single-service2-row .single-service2-col h2, .single-service-section .container .single-service-row .single-service-col h2{
+    color: var(--primary-color);
+}
+.single-service2-section .container .single-service2-row .single-service2-col img{
+    width: 100%;
+}
+.single-service2-section .container .single-service2-row .single-service2-col .checklist li::before,.single-service-section .container .single-service-row .single-service-col .checklist li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-left: 10px;
+    color: #10d058;
+}
+
+@media (max-width: 768px) {
+    .single-service2-section .container .single-service2-row{
+        flex-direction: column;
+      padding-bottom: 0;  
+      gap: 0;
+    }
+    .single-service2-section .container .single-service2-row .single-service2-col{
+        margin-bottom: 30px;
+    }
+    
+}

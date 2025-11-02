@@ -1,0 +1,108 @@
+
+
+.faq-section h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: var(--primary-color);
+    font-weight: var(--strong-weight);
+}
+.faq-section .section-header {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.faq-section .section-header p {
+   color: var(--gray-color);
+}
+
+.faq-section h2::after,
+.faq-section h2::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--gray-color);
+    margin-inline: 8px;
+}
+
+.faq-section .container .faq-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+
+}
+
+.faq-section .container .faq-row .faq-col {
+    width: 30%;
+}
+
+.faq-section .container .faq-row .faq-col .faq-card {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.faq-section .container .faq-row .faq-col .faq-card .faq-icon {
+    margin-bottom: 20px;
+}
+
+.faq-section .container .faq-row .faq-col .faq-card .faq-icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.faq-section .container .faq-row .faq-col .faq-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.faq-section .container .faq-row .faq-col .faq-card p {
+    margin-bottom: 15px;
+    color: var(--component-color);
+}
+
+.faq-section .container .faq-row .faq-col .faq-card .faq-card-icon {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.faq-section .container .faq-row .faq-col .faq-card .faq-card-icon div {
+    padding: 10px 20px 10px 10px;
+    font-weight: 600;
+}
+
+.faq-section .container .faq-row .faq-col .faq-card .faq-card-icon a {
+    color: var(--white);
+}
+
+.faq-section .container .faq-row .faq-col .faq-card .faq-card-icon .i-div {
+    background-color: #3e9cc4;
+
+}
+@media (max-width: 768px) {
+    .faq-section .container .faq-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .faq-section .container .faq-row .faq-col {
+        width: 100%;
+    }
+    .faq-section .container .faq-row .faq-col .faq-card {
+        height: auto;
+    }
+    
+}

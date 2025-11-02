@@ -1,0 +1,112 @@
+.whyblog .row {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+.whyblog .row .col1 {
+    width: 70%;
+    padding: 20px 0;
+    color: var(--gray-color);
+}
+.whyblog .row .col2 {
+    width: 30%;
+   
+}
+.whyblog .row .col2 img {
+    width: 100%;
+   
+}
+
+
+.whyblog .row .col1 h2 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+.whyblog .row .col1 p {
+    line-height: 1.6;
+    margin: 20px 0;;
+}
+
+
+.whyblog .btn-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.whyblog .btn-wrapper .neon-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: .5rem; */
+    padding: 15px 28px;
+    background: #0b1631;
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+    isolation: isolate;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .18);
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    overflow: hidden;
+}
+
+.whyblog .btn-wrapper .neon-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(240, 164, 58, .6);
+}
+
+.whyblog .btn-wrapper .neon-btn::before {
+    content: "";
+    position: absolute;
+    inset: auto auto 0 .8rem;
+    width: 26px;
+    height: 6px;
+    background: #f0a43a;
+    border-radius: 0 4px 0 0;
+    box-shadow: 0 0 14px rgba(240, 164, 58, .6);
+    transition: width .25s ease;
+    z-index: 1;
+}
+
+.whyblog .btn-wrapper .neon-btn:hover::before {
+    width: 36px;
+}
+
+.whyblog .hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.whyblog .hero-meta i{
+    color: #f0a43a;
+    margin: 5px 10px;
+}
+.serv-blog{
+    align-self: center;
+}
+@media (max-width: 991px) {
+    .whyblog .row {
+        flex-direction: column;
+    }
+    .whyblog .row .col1, .whyblog .row .col2 {
+        width: 100%;
+    }
+    .whyblog .row .col2 img {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 575px) {
+    .whyblog .btn-wrapper .neon-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    .whyblog .row {
+      gap: 0;
+    }
+}

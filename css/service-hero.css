@@ -1,0 +1,84 @@
+.service-hero {
+    background-color: #000;
+    padding-block: 150px 20px;
+}
+
+.service-hero .row {
+    display: flex;
+    gap: 50px;
+    padding-block: 20px;
+    align-items: center;
+}
+
+.service-hero .row .col-right {
+    width: 40%;
+    height: 350px;
+}
+
+.service-hero .row .col-right .img {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/circle-purbble-3.png");
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-hero .row .col-right img {
+    width: 70%;
+    border-radius: 50%;
+}
+.service-hero .row .col-left h1{
+    font-size: 50px;
+    font-weight: 500;
+ 
+}
+
+.service-hero .row .col-left p{
+    text-align: center;
+ 
+}
+
+.service-hero .row .margin-bottom {
+    margin-bottom: 20px;
+}
+
+/* تابلت */
+@media (max-width: 1024px) {
+    .service-hero {
+        padding-block: 90px 0px;
+    }
+
+  }
+  
+  /* لابتوب وديسكتوب */
+  @media (max-width: 769px) {
+    .service-hero .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .service-hero .row .col-right {
+        order: 2;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .service-hero .row .col-left {
+       width: 100%;
+    }
+  }
+  /* لابتوب وديسكتوب */
+  @media (max-width: 543px) {
+    .service-hero .row .col-left h1 {
+        font-size: 30px;
+    }
+    .service-hero .row .col-right {
+      width: 80%;
+       
+    }
+  }
+

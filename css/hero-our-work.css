@@ -1,0 +1,126 @@
+.hero-our-work{
+    background-color: #000;
+    padding-block: 150px 10px;
+}
+.hero-our-work .row{
+   display: flex;
+   align-items: center;
+}
+.hero-our-work .row .col{ 
+  width: 50%;
+}
+.hero-our-work .row .col h1{ 
+    font-size: 70px;
+    font-weight: 400;
+}
+.hero-our-work .row .col p{ 
+    font-size: 18px;
+}
+.hero-our-work .row.block{ 
+    font-size: 40px;
+    justify-content: center;
+    padding-block: 30px 10px;
+    font-weight: 300;
+    color: var(--e-global-color-secondary);
+}
+/* الأساس */
+.hero-our-work {
+    background-color: #000;
+    padding-block: 150px 10px;
+}
+
+.hero-our-work .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-our-work .row .col {
+    width: 50%;
+}
+
+.hero-our-work .row .col h1 {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.hero-our-work .row .col p {
+    font-size: 18px;
+}
+
+.hero-our-work .row.block {
+    font-size: 40px;
+    justify-content: center;
+    padding-block: 30px 10px;
+    font-weight: 300;
+    color: var(--e-global-color-secondary);
+}
+
+/* الرسبونسف */
+
+/* الشاشات من 992px إلى أقل (تابلت) */
+@media (max-width: 992px) {
+    .hero-our-work {
+        padding-block: 100px 10px;
+    }
+
+    .hero-our-work .row .col {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-our-work .row .col h1 {
+        font-size: 50px;
+    }
+
+    .hero-our-work .row .col p {
+        font-size: 16px;
+    }
+
+    .hero-our-work .row.block {
+        font-size: 32px;
+    }
+}
+
+/* الشاشات من 768px إلى أقل (موبايل كبير) */
+@media (max-width: 768px) {
+    .hero-our-work {
+        padding-block: 80px 10px;
+    }
+
+    .hero-our-work .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-our-work .row .col h1 {
+        font-size: 40px;
+    }
+
+    .hero-our-work .row .col p {
+        font-size: 15px;
+    }
+
+    .hero-our-work .row.block {
+        font-size: 28px;
+    }
+}
+
+/* الشاشات الصغيرة جدًا (موبايل صغير - أقل من 480px) */
+@media (max-width: 480px) {
+    .hero-our-work {
+        padding-block: 60px 10px;
+    }
+
+    .hero-our-work .row .col h1 {
+        font-size: 32px;
+    }
+
+    .hero-our-work .row .col p {
+        font-size: 14px;
+    }
+
+    .hero-our-work .row.block {
+        font-size: 24px;
+    }
+}

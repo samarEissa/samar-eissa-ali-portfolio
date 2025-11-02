@@ -1,0 +1,87 @@
+.our-courses h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: var(--primary-color);
+    font-weight: var(--strong-weight);
+}
+.our-courses .section-header {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.our-courses .section-header p {
+   color: var(--gray-color);
+}
+
+.our-courses h2::after,
+.our-courses h2::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--gray-color);
+    margin-inline: 8px;
+}
+.our-courses-slider {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .our-courses-track {
+    padding: 50px ;
+    margin-block: 30px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    transition: transform 0.5s ease-in-out; /* الحركة */
+    will-change: transform; /* تحسين الأداء */  }
+  
+  .our-courses-track .our-courses-slide {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10px; */
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 8px;
+  }
+
+  .our-courses-track img {
+    width: 100%;
+    height: 200px;
+    /* padding-top: 10px; */
+   
+  }
+    .our-courses-track h3 {
+        font-size: 1.2rem;
+        padding: 10px;
+        color: var(--primary-color);
+        font-weight: var(--strong-weight);
+    }
+    .our-courses-track .job-description{
+        font-size: 1rem;
+        color: var(--gray-color);
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    @media (max-width: 1024px) {
+        .our-courses-track .our-courses-slide {
+            width:48%;
+        }
+        
+    }
+    @media (max-width: 767px) {
+        .our-courses-track .our-courses-slide {
+            width: 100%;
+        }
+        .our-courses-track {
+            padding: 20px;
+            gap: 15px;
+            margin-block: 20px;
+            flex-wrap: wrap;
+        }
+
+    }
+

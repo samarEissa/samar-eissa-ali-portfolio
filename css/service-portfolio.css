@@ -1,0 +1,131 @@
+.service-portfolio {
+    background-color: #000000;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.service-portfolio::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    /* z-index: -1; */
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-image: url("../img/blur.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    opacity: .5;
+    transition: background var(--overlay-transition, .3s), border-radius var(--border-transition, .3s), opacity var(--overlay-transition, .3s);
+
+}
+
+.service-portfolio .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+
+}
+.service-portfolio .row-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 25px;
+    font-size: 20px;
+
+}
+
+.service-portfolio .row .col {
+    width: 30%;
+}
+
+
+
+.portfolio__service-item {
+    padding: 40px;
+    border: 1.3px solid #f1f1f1;
+    border-radius: 21px;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 1;
+    margin-bottom: 25px;
+    height: 90%;
+    display: block;
+}
+
+.portfolio__service-item::after {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 76px;
+    right: -2px;
+    top: calc(50% - 38px);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #f1f1f1;
+    z-index: 0;
+
+}
+
+.portfolio__service-item:hover::after {
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+    right: -1px;
+    top: 0;
+    border-radius: 15px;
+}
+
+.portfolio__service-item p {
+    color: #afafaf;
+}
+
+.portfolio__service-item .ps-title ,.portfolio__service-item p,
+.portfolio__service-item .read-more-div{
+    position: relative;
+    z-index: 1;
+}
+.portfolio__service-item .ps-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.portfolio__service-item .read-more-div {
+    padding-top: 10px;
+    font-size: 20px;
+    color: #afafaf;
+    font-weight: bold;
+}
+
+.portfolio__service-item {
+    filter: initial;
+}
+
+.portfolio__service-item:hover .ps-title,
+.portfolio__service-item:hover p {
+    color: black
+}
+
+/* تابلت */
+@media (max-width: 1024px) {
+    .service-portfolio .row .col {
+        width: 48%;
+    }
+
+  }
+  
+  /* لابتوب وديسكتوب */
+  @media (max-width: 667px) {
+    .service-portfolio .row .col {
+        width: 100%;
+    }
+  }

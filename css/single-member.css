@@ -1,0 +1,178 @@
+
+
+.single-member-section {
+    background: var(--white);
+}
+
+.single-member-section .container .single-member-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    padding: 50px 0;
+
+}
+
+.single-member-section .container .single-member-row .single-member-col {
+   width: 100%;
+}
+
+/* .single-member-section .container .single-member-row .single-member-col img {
+    width: 100%;
+} */
+
+.single-member-section .container .single-member-row .single-member-col .checklist li {
+    position: relative;
+
+}
+.img-member-single{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.img-member-single img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.data-member-single {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+
+}
+
+.skills-member-single .row{
+display: flex;
+flex-wrap: wrap;
+}
+.skills-member-single .row .col{
+    flex: 1 1 50%;
+    margin-bottom: 10px;
+}
+.progress-bar:not(.radial):not(.circle)[data-title] {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    border-radius: 30px;
+}
+.progress-bar:not(.radial):not(.circle) {
+    height: 24px;
+    background-color:#ebebeb;
+    /* margin-bottom: 25px; */
+    font-size: 14px;
+    line-height: 23px;
+    margin-left: 15px;
+}
+.progress-bar {
+    display: block;
+    position: relative;
+}
+.progress-bar:not(.radial):not(.circle)[data-title]::before {
+    font-size: 14px;
+    line-height: 1;
+}
+.progress-bar:not(.radial):not(.circle)[data-title]::before {
+    height: 25px;
+    /* font-size: 13px; */
+    /* line-height: 25px; */
+    font-weight: 600;
+    right: 0;
+    width: 100%;
+    bottom: 100%;
+}
+.progress-bar[data-title]::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+}
+.progress-bar:not(.radial):not(.circle) .progress-num {
+    position: absolute;
+    right: 95%;
+    color:var(--white);
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    padding: 0 15px;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.progress-num90 {
+    right: 90% !important;
+}
+.progress-bar:not(.radial):not(.circle)[data-title] svg {
+    border-radius: 30px;
+}
+.progress-bar:not(.radial):not(.circle) svg rect {
+    fill: var(--gray-color);
+}
+.progress-bar:not(.radial):not(.circle).danger svg rect {
+    fill: var(--danger-color);
+}
+.progress-bar:not(.radial):not(.circle).warning svg rect {
+    fill: var(--warning-color);
+}
+.progress-bar:not(.radial):not(.circle).info svg rect {
+    fill: var(--info-color);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .single-member-section .container .single-member-row {
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 0;
+    }
+
+    .single-member-section .container .single-member-row .single-member-col {
+        margin-bottom: 30px;
+    }
+    .skills-member-single .row .col{
+        flex:  1 100%;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+.single-member2-section .container .single-member2-row{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    
+}
+.single-member2-section .container .single-member2-row .single-member2-col{
+   flex: 1;
+}
+.single-member2-section .container .single-member2-row .single-member2-col h2, .single-member-section .container .single-member-row .single-member-col h2{
+    color: var(--primary-color);
+}
+.single-member2-section .container .single-member2-row .single-member2-col img{
+    width: 100%;
+}
+.single-member2-section .container .single-member2-row .single-member2-col .checklist li::before,.single-member-section .container .single-member-row .single-member-col .checklist li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-left: 10px;
+    color: #10d058;
+}
+
+@media (max-width: 768px) {
+    .single-member2-section .container .single-member2-row{
+        flex-direction: column;
+      padding-bottom: 0;  
+      gap: 0;
+    }
+    .single-member2-section .container .single-member2-row .single-member2-col{
+        margin-bottom: 30px;
+    }
+    
+}

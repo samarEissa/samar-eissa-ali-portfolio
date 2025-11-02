@@ -1,0 +1,175 @@
+.portfolio__area {
+  /* padding: 120px 0px 100px; */
+  background-color: #000;
+  padding: 0px 15px;
+  /* عشان الموبايل يبقى فيه مساحة */
+
+}
+
+.portfolio__area .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio__area .row .pin-spacer {
+  order: 0;
+  place-self: auto;
+  grid-area: auto;
+  z-index: 1;
+  float: none;
+  flex-shrink: 0;
+  display: block;
+  margin: 0px;
+  inset: 0px;
+  position: relative;
+  flex-basis: auto;
+  overflow: visible;
+  box-sizing: border-box;
+  width: 1140px;
+  height: 350px;
+  padding: 0px;
+}
+
+.portfolio__area .row .pin-spacer .portfolio__text {
+  font-size: 150px;
+  font-weight: 500;
+  opacity: 1;
+  text-align: center;
+  width: 1140px;
+  height: 350px;
+  /* padding: 120px 0px 50px; */
+  z-index: 1;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  opacity: 1;
+  position: absolute;
+  /* تحكمي في المسافة */
+  z-index: 1;
+}
+
+.portfolio__area .row .portfolio__list-1 {
+  display: -ms-grid;
+  height: 2500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.portfolio__area .row .portfolio__list-1 .portfolio__item {
+  opacity: 0.7;
+  transform: perspective(4000px) rotateX(90deg) scale(0.5, 0.5);
+  position: relative;
+  padding-bottom: 30px;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /* scale: 0.5; */
+  /* opacity: 0; */
+  width: 100%;
+}
+
+
+.portfolio__item img {
+  width: 100%;
+  min-height: 950px;
+  max-height: 950px;
+}
+
+.portfolio__info {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  z-index: 99999;
+  -webkit-transform: translateX(60px);
+  transform: translateX(60px);
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+  visibility: hidden;
+  background-color: var(--e-global-color-primary);
+}
+
+.portfolio__item:hover .portfolio__info {
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(0);
+  transform: translateX(0)
+}
+
+/* تابلت */
+@media (max-width: 1024px) {
+  .portfolio__area .row .portfolio__list-1 {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    height: 1650px;
+  }
+
+  .portfolio__area .row .pin-spacer .portfolio__text {
+    font-size: 120px;
+    height: 150px;
+  }
+
+  .portfolio__area .row .portfolio__list-1 .portfolio__item {
+    padding-bottom: 0;
+    /* height: 150px; */
+  }
+
+}
+
+/* لابتوب وديسكتوب */
+@media (max-width: 769px) {
+  .portfolio__area .row .pin-spacer {
+    height: 150px;
+  }
+
+  .portfolio__area .row .pin-spacer .portfolio__text {
+    font-size: 50px;
+    height: 150px;
+  }
+
+  .portfolio__area .row .portfolio__list-1 {
+    grid-template-columns: 1fr;
+    gap: 0px 0px;
+    margin-top: 0;
+    height: 4500px;
+
+  }
+
+  .portfolio__area .row .portfolio__list-1 .portfolio__item {
+    padding-bottom: 0;
+  }
+}
+
+/* لابتوب وديسكتوب */
+@media (max-width: 543px) {
+  .portfolio__area .row .pin-spacer {
+    height: 150px;
+  }
+
+  .portfolio__area .row .pin-spacer .portfolio__text {
+    font-size: 50px;
+    height: 150px;
+  }
+
+  .portfolio__area .row .portfolio__list-1 {
+    grid-template-columns: 1fr;
+    gap: 0px 0px;
+    margin-top: 0;
+    height: 3900px;
+
+  }
+
+  .portfolio__area .row .portfolio__list-1 .portfolio__item {
+    padding-bottom: 0;
+  }
+}

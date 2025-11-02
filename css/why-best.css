@@ -1,0 +1,114 @@
+.why-best {
+    background-color: #000;
+    padding: 30px 0;
+}
+
+.why-best .row1,
+.why-best .row2 {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.why-best .row2 {
+    align-items: start;
+    flex-wrap: wrap;
+    
+}
+
+.why-best .row1 {
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.why-best .row1 .col-right {
+    width: 100%;
+}
+
+.why-best .row1 .col-right h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.why-best .row1 .col-left {
+    width: 66%;
+}
+
+.why-best .row2 .col {
+    padding: 10px;
+    height: 350px;
+    width: 33.33%;
+    border-left: 1px solid #eeeeee33;
+    border-block: 1px solid #eeeeee33;
+}
+
+.why-best .row2 .col.border-none {
+    border-left: none;
+}
+
+.why-best .row2 .col .title-sec {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    /* border-bottom: 1px solid #eeeeee33; */
+}
+
+.why-best .row2 .col .title-sec img {
+    width: 15%;
+}
+
+.why-best .row2 .col .title-sec h3 {
+    width: 85%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.why-best .row2 .col .discreption-sec {
+    padding: 5px;
+    font-size: 14.5px;
+    font-weight: 500;
+}
+
+.why-best .row2 .col .discreption-sec ul li .list-icon {
+    margin-left: 5px;
+}
+
+/* تابلت */
+@media (max-width: 1024px) {
+
+    .why-best .row2 {
+        flex-wrap: wrap;
+    }
+
+
+    .why-best .row2 .col {
+        width: 50%;
+    }
+    .why-best .row2 .col .title-sec h3 {
+        width: 100%;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .why-best .row2 .col .discreption-sec {
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+/* لابتوب وديسكتوب */
+@media (max-width: 769px) {
+    .why-best .row2 .col ,.why-best .row1 .col-right{
+        width: 100%;
+    }
+    .why-best .row2 .col {
+      height: auto;
+    }
+    .why-best .row1{
+
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,31 @@
+.data-subscription{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: var(--white);
+}
+.data-subscription .data-subscription1{
+    background-color: var(--primary-color);
+}
+.data-subscription .data-subscription2{
+    background-color: var(--secondary-color);
+}
+.data-subscription .data-subscription1, .data-subscription .data-subscription2{
+    width: 48%;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: var(--component-shadow);
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .data-subscription {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .data-subscription .data-subscription1, .data-subscription .data-subscription2 {
+        width: 100%;
+    }
+    
+}
