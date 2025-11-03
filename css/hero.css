@@ -1,6 +1,6 @@
 .hero {
   background-color: #000000;
-  background-image: url("../img/logo-half.png");
+  /* background-image: url("../img/logo-half.png"); */
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 20% auto;
@@ -10,7 +10,7 @@
 }
 
 .hero-overlay {
-  background-image: url("../img/logo-half-right.png");
+  /* background-image: url("../img/logo-half-right.png"); */
   background-position: top right;
   background-repeat: no-repeat;
   opacity: 0.44;
