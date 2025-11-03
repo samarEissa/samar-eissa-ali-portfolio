@@ -111,7 +111,7 @@
   .portfolio__area .row .portfolio__list-1 {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    height: 1650px;
+    /* height: 1650px; */
   }
 
   .portfolio__area .row .pin-spacer .portfolio__text {
@@ -165,7 +165,7 @@
     grid-template-columns: 1fr;
     gap: 0px 0px;
     margin-top: 0;
-    height: 3900px;
+    height: 4600px;
 
   }
 
