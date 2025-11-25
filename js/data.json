@@ -108,6 +108,27 @@
                     "Tailwind",
                     "GitHub"
                 ]
+            },
+            {
+                "site name": "Booking Clone",
+                "site logo": "./imgs/web-logo-booking.png",
+                "site link": "https://booking-mearn-front.vercel.app/",
+                "site home page images": "./imgs/websites-booking-home.png",
+                "other images": [
+                    "./imgs/websites-booking-home.png",
+                    "imgs/websites-booking-attractions.png",
+                    "imgs/websites-booking-cars.png",
+                    "imgs/websites-booking-subadmin.png",
+                    "imgs/websites-booking-register.png",
+                    "imgs/websites-booking-responsive.png"
+                ],
+                "used technologies": [
+                    "Next Js",
+                    "Node js",
+                    "Tailwind",
+                    "shadCN",
+                    "GitHub"
+                ]
             }
         ],
         "Landing Pages": [
